@@ -2,7 +2,7 @@
 
 # 📊 Workforce Optimization and Prediction Using Machine Learning
 
-This project presents a full end-to-end data science pipeline for workforce optimization and incident risk prediction. It simulates realistic operational data from a technical services company and explores how predictive models can support strategic decisions in workforce planning, safety, and resource deployment.
+This project presents a full end-to-end data science pipeline for workforce optimization and incident risk prediction. It uses operational data from a technical services company and explores how predictive models can support strategic decisions in workforce planning, safety, and resource deployment.
 
 ---
 
@@ -18,7 +18,6 @@ In many industries, optimizing workforce allocation and predicting potential hea
 
 ## 🛠️ Key Features
 
-- 💡 **Realistic Dataset**: Synthetic dataset modeled after real-world structures (staff records, HSE incidents, project logs, equipment, and materials).
 - 🧹 **Data Preprocessing**: Missing values, outliers, and temporal inconsistencies handled.
 - 🔎 **Exploratory Data Analysis**: Visual insights into workforce trends, safety incidents, and resource usage.
 - 🤖 **Machine Learning Models**: Supervised models like Random Forest and XGBoost applied for prediction tasks.
