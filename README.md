@@ -1,6 +1,6 @@
 # DS-final-project
 
-readme_content = """# Exploring Multivariate Socioeconomic Trends in Nigeria Using Machine Learning
+### Exploring Multivariate Socioeconomic Trends in Nigeria Using Machine Learning
 
 ## 1. Project Overview
 This project investigates long-term socioeconomic trends in Nigeria using machine learning methods applied to World Bank Development Indicators (WDI) data.
