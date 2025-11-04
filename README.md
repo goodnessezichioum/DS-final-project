@@ -1,77 +1,77 @@
 # DS-final-project
 
-# 📊 Workforce Optimization and Prediction Using Machine Learning
+readme_content = """# Exploring Multivariate Socioeconomic Trends in Nigeria Using Machine Learning
 
-This project presents a full end-to-end data science pipeline for workforce optimization and incident risk prediction. It uses operational data from a technical services company and explores how predictive models can support strategic decisions in workforce planning, safety, and resource deployment.
+## 1. Project Overview
+This project investigates long-term socioeconomic trends in Nigeria using machine learning methods applied to World Bank Development Indicators (WDI) data.
+The goal is to identify and forecast key development indicators through a multivariate analysis of economic, demographic, and trade variables spanning 1960–2024.
 
----
-
-## 🔍 Project Overview
-
-In many industries, optimizing workforce allocation and predicting potential health and safety risks are crucial for efficiency, cost-effectiveness, and employee wellbeing. This project explores how machine learning can be applied to:
-
-- Predict likelihood of workplace incidents based on workforce and project data.
-- Identify key drivers of high-risk work environments.
-- Support strategic HR decisions with data-driven insights.
+The study combines traditional regression and modern ensemble learning techniques to evaluate how different socioeconomic factors co-evolve and to predict short-term future outcomes.
 
 ---
 
-## 🛠️ Key Features
-
-- 🧹 **Data Preprocessing**: Missing values, outliers, and temporal inconsistencies handled.
-- 🔎 **Exploratory Data Analysis**: Visual insights into workforce trends, safety incidents, and resource usage.
-- 🤖 **Machine Learning Models**: Supervised models like Random Forest and XGBoost applied for prediction tasks.
-- 📈 **Performance Evaluation**: Accuracy, precision, recall, and feature importance metrics.
-- 📊 **Dashboard-Ready Outputs**: Clean datasets and predictions suitable for visualization in Power BI or Tableau.
+## 2. Objectives
+1. Explore multivariate relationships among socioeconomic indicators in Nigeria.
+2. Develop predictive models for key indicators (e.g., GDP per capita, CPI, urbanisation rate).
+3. Evaluate and compare model performance across linear, tree-based, and neural approaches.
+4. Interpret feature importance to uncover dominant socioeconomic drivers.
 
 ---
 
-## 📁 Folder Structure
-📦Workforce-Optimization-Project
-├── data/
-│ ├── Workforce.csv
-│ ├── HSE.csv
-│ ├── Projects.csv
-│ ├── Equipment_Log.csv
-│ └── Materials.csv
-├── notebooks/
-│ ├── 01_data_cleaning.ipynb
-│ ├── 02_eda.ipynb
-│ ├── 03_modeling.ipynb
-│ └── 04_results_and_dashboard.ipynb
-├── models/
-│ ├── random_forest_model.pkl
-│ └── xgboost_model.pkl
-├── visuals/
-│ ├── eda_charts/
-│ └── model_performance/
-├── README.md
-└── requirements.txt
-
+## 3. Data Source
+- **Dataset:** World Bank – World Development Indicators (WDI)
+- **File:** `API_NGA_DS2_en_csv_v2_130484.zip`
+- **Country:** Nigeria
+- **Time range:** 1960–2024
+- **Update date:** 07 October 2025
+- **Variables:** ~1,500 indicators across economic, demographic, and environmental domains.
 
 ---
 
-## 📊 Dataset Description
+## 4. Methodology
+1. **Data Cleaning & Preprocessing**
+   - Handle missing values, select indicators with ≥25 years of continuous coverage (ending ≥2022).
+   - Normalise and transform numeric features (log, difference, percentage change).
 
-| Table             | Description                                                                 |
-|------------------|-----------------------------------------------------------------------------|
-| `Workforce`       | Staff profiles with employment details, man hours, and contract timelines   |
-| `HSE`             | Health, Safety & Environment incidents linked to staff and project activity |
-| `Projects`        | Project lifecycle data including duration, status, and location             |
-| `Equipment_Log`   | Equipment tracking and deployment status                                    |
-| `Materials`       | Material inventory, condition, type, and warehouse details                  |
+2. **Exploratory Data Analysis (EDA)**
+   - Assess indicator coverage and continuity.
+   - Visualise long-term socioeconomic trends and correlations.
+   - Identify potential predictor–target relationships.
+
+3. **Modelling Approach**
+   - **Linear Regression (Ridge, Lasso)** – baseline interpretability.
+   - **Random Forest** – non-linear feature interactions and variable importance.
+   - **XGBoost** – high-performance gradient boosting for precise forecasting.
+
+4. **Evaluation**
+   - Chronological **train/test split** (train: up to 2022; test: 2023–2024).
+   - Metrics: RMSE, MAE, MAPE, directional accuracy.
+   - Real predictions extended to 2025–2027 for forecast validation.
 
 ---
 
-## 🤖 Models Used
+## 6. Tools and Libraries
+- Python
+- Pandas, NumPy, Scikit-learn
+- XGBoost, TensorFlow/Keras (for LSTM)
+- Matplotlib, Seaborn, SHAP
 
-| Model           | Use Case                                | Reason for Selection                      |
-|----------------|------------------------------------------|-------------------------------------------|
-| Random Forest   | Incident prediction                     | High interpretability, handles imbalance  |
-| XGBoost         | Model comparison for prediction tasks   | Fast, regularized, often better accuracy  |
+---
 
+## 7. Key Findings (to be updated after analysis)
+- Indicators with the most continuous coverage: population, CPI, trade, reserves, urbanisation.
+- Expected relationships: rising urbanisation correlates with GDP growth and CPI acceleration.
+- Machine learning models (especially XGBoost) are expected to outperform linear baselines for short-horizon forecasts.
 
+---
 
+## 9. Citation
+> The World Bank (2025). *World Development Indicators – Nigeria Dataset (API_NGA_DS2_en_csv_v2_130484)*.  
+> Retrieved from: [https://data.worldbank.org/country/nigeria](https://data.worldbank.org/country/nigeria)
+"""
 
+# Write README.md file
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(readme_content)
 
 
