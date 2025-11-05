@@ -70,8 +70,5 @@ The study combines traditional regression and modern ensemble learning technique
 > Retrieved from: [https://data.worldbank.org/country/nigeria](https://data.worldbank.org/country/nigeria)
 """
 
-# Write README.md file
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
 
 
